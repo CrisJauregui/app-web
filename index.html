@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Pendientes de la semana</h1>
+        <div class="add-task">
+            <input type="text" id="newTaskInput" placeholder="¿Cuales son tus planes para la semana?">
+            <button id="addTaskButton">Agregar tarea</button>
+        </div>
+        <div class="task-columns">
+            <div class="column">
+                <h2>Pendientes</h2>
+                <ul id="pendienteTasks" class="task-list"></ul>
+            </div>
+            <div class="column">
+                <h2>Haciendo</h2>
+                <ul id="haciendoTasks" class="task-list"></ul>
+            </div>
+            <div class="column">
+                <h2>Completada</h2>
+                <ul id="completadaTasks" class="task-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
